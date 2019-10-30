@@ -1,4 +1,4 @@
-export default() {
+export default {
   filteredNote: (state) => {
     if(state.show = "all") {
       return state.notes

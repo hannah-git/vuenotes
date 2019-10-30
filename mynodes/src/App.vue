@@ -1,25 +1,10 @@
 <template>
-  <div id="app">
-      <tool></tool>
-      <list></list>
-      <edit></edit>
+  <div id="app" class="app">
+    <tool></tool>
+    <list></list>
+    <edit></edit>
   </div>
 </template>
-
-<script>
-import  tool form './components/tool'
-import  list form './components/list'
-import  edit form './components/edit'
-
-export default {
-  name: 'App',
-  components:{
-    tool,
-    list,
-    edit
-  },
-}
-</script>
 
 <style>
   html {
@@ -39,3 +24,19 @@ export default {
     height: 100vh;
   }
 </style>
+
+<script>
+
+import edit from './components/edit';
+import list from './components/list';
+import tool from './components/tool';
+
+export default {
+  name: 'app',
+  components: {
+      edit,
+      list,
+      tool
+    }
+}
+</script>

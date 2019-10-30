@@ -3,16 +3,16 @@ export default {
   add_note({commit}) {
       commit('ADD_NOTE')
   },
-  DEL_NOTE({commit}) {
+  del_note({commit}) {
      commit('DEL_NOTE')
   },
-  FAV_NOTE({commit}) {
+  fav_note({commit}) {
     commit('FAV_NOTE')
   },
-  SELECT_NOTE({commit}) {
-    commit('SELECT_NOTE')
+  select_note({commit},note) {
+    commit('SELECT_NOTE',note)
   },
-  SWITCH_NOTE({commit}) {
+  switch_note({commit}) {
      commit('SWITCH_NOTE')
   },
 }
