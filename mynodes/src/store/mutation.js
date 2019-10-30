@@ -15,7 +15,6 @@ export default {
     state.activeNote = note
   },
   [SELECT_NOTE](state, note) {
-    debugger
     state.activeNote = note
   },
   [DEL_NOTE](state) {

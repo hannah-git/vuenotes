@@ -12,7 +12,7 @@ export default {
   select_note({commit},note) {
     commit('SELECT_NOTE',note)
   },
-  switch_note({commit}) {
-     commit('SWITCH_NOTE')
+  switch_note({commit},type) {
+     commit('SWITCH_NOTE',type)
   },
 }

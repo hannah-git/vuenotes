@@ -1,6 +1,6 @@
 export default {
   filteredNote: (state) => {
-    if(state.show = "all") {
+    if(state.show === "all") {
       return state.notes
     }else{
       return state.notes.filter( (note) => {
